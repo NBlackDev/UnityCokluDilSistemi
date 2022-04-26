@@ -5,6 +5,12 @@ using UnityEngine.UI;
 
 public class MetinKontrolcusu : MonoBehaviour
 {
+
+    /*
+    ÖNEMLİ!: Bu koların çalışma mantığını iyi bir şekilde anlamak için lütfen aşağıdaki linkte bulunan YouTube videosunu izleyin.
+    https://youtu.be/6otMzicEsjI
+    */
+
     // Burada diğer koda erişmek için gerekli ataaları yapıyoruz.
     public DilKontrolcusu DilKodu;
     public GameObject DilKoduObj;

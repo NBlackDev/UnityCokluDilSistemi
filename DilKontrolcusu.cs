@@ -5,6 +5,11 @@ using UnityEngine.UI;
 
 public class DilKontrolcusu : MonoBehaviour
 {
+    /*
+    ÖNEMLÝ!: Bu kolarýn çalýþma mantýðýný iyi bir þekilde anlamak için lütfen aþaðýdaki linkte bulunan YouTube videosunu izleyin.
+    https://youtu.be/6otMzicEsjI
+    */
+
     public int OtoDilDurum;
     public string Dil;
     // bunlar dil seçim butonlarý, tercihinize göre çoðaltýn
