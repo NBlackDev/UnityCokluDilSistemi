@@ -7,6 +7,6 @@ Yorum satırlarını okuyarak kodun çalışma mantığını anlayabilirsiniz.
 
 Eğer oyununuzda tek scene varsa sadece DilKontrolcusu.cs kodunu kullanabilirsiniz.Eğer birden fazla scene varsa, her iki kodu da kullanmanız gerekmektedir.
 
-İyiÇalışmalar, NBlackDev.
-25.04.2022
+İyi Çalışmalar, NBlackDev.
+26.04.2022
 
