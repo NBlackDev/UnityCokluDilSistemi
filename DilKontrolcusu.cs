@@ -16,20 +16,15 @@ public class DilKontrolcusu : MonoBehaviour
     {
        // otodildurum dedðimiz ise sisemin dili otomatik olarak ý belirleyeceði, yoksa kullanýcýnýn daha öceden belirleyip belirlemediðini kontrol eden sistemdir.
        // bu deðer 1 olursa sistem otomatikbelirler 2 olursa kullanýcýnýn dil tercihi hatýrlanýr.
-       OtoDilDurum = PlayerPrefs.GetInt("OtoDilDurum", OtoDilDurum);
-       Dil = PlayerPrefs.GetString("Dil", Dil);
+       OtoDilDurum = PlayerPrefs.GetInt("OtoDilDurum");
+       Dil = PlayerPrefs.GetString("Dil");
 
     }
     void Start()
     { 
         // ilk giriþte otodildurumu deðiþkeni 0 olduðu için 1 yapýp sistemi oto halegtiriyor.
-        if(OtoDilDurum == 0)
-        {
-            OtoDilDurum = 1;
-            PlayerPrefs.SetInt("OtoDilDurum", OtoDilDurum);
-        }
         // eðer otodil durum 1 ise otomatik dil belirleme sstemi çalýþýyor
-        if(OtoDilDurum == 1)
+        if(OtoDilDurum == 0)
         {
             // bu kýsýmda eðer cihaz dili Türkçe ise dil deðiþkeninini Türkçe'ye eþitliyor.
             if(Application.systemLanguage == SystemLanguage.Turkish)
@@ -77,7 +72,7 @@ public class DilKontrolcusu : MonoBehaviour
     // Eðer kullanýcý kendisi seçinyaparsa OtoDilDurum deðiþkeni 2 oluyor ve bundan sonra açýlýþta sistem dili otomatik deðil de kullanýcý seçmine göre belirliyor.
     public void TurkceSec()
     {
-        OtoDilDurum = 2;
+        OtoDilDurum = 1;
         Dil = "Turkish";
         PlayerPrefs.SetInt("OtoDilDurum", OtoDilDurum);
         PlayerPrefs.SetString("Dil", Dil);
@@ -88,7 +83,7 @@ public class DilKontrolcusu : MonoBehaviour
     // Eðer kullanýcý kendisi seçinyaparsa OtoDilDurum deðiþkeni 2 oluyor ve bundan sonra açýlýþta sistem dili otomatik deðil de kullanýcý seçmine göre belirliyor.
     public void IngilizceSec()
     {
-        OtoDilDurum = 2;
+        OtoDilDurum = 1;
         Dil = "English";
         PlayerPrefs.SetInt("OtoDilDurum", OtoDilDurum);
         PlayerPrefs.SetString("Dil", Dil);
@@ -103,7 +98,7 @@ public class DilKontrolcusu : MonoBehaviour
     // Kolay gelsin.
 
     // NBlackDev || www.github.com/nblackdev
-    // 25.04.2022
+    // 26.04.2022
 
 
 }
